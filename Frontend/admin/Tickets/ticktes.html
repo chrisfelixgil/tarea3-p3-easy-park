@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets</title>
+    <link rel="stylesheet" href="/admin/Tickets/style.css" type="text/css" />
+  </head>
+  <body>
+    <img class="banner-img" src="/img/banner.jpg" alt="banner-country" />
+    <!-- Modifar la imagen-->
+
+    <!-- MENU -->
+    <main class="primary-conteiner">
+      <header class="header-web">
+        <nav>
+          <ul class="ul-father">
+            <a href="/admin/Estacionamientos/estacionamientos.html"
+              ><li>Estacionamientos</li></a
+            >
+            <a href="/admin/Tarifas/tarifas.html"><li>Tarifas</li></a>
+            <a href="/admin/Tickets/ticktes.html"><li>Tickets</li></a>
+            <a href="/admin/admin.html"><li>Vehiculos</li></a>
+            <a href="/entrada.html"><li>EasyPark</li></a>
+          </ul>
+        </nav>
+      </header>
+      <br>
+
+      <!--SECTIONS -->
+      <section class="section-one">
+        <h1 class="section-one-headder">Tickets pagos</h1>
+        <br>
+        <!-- TABLE -->
+        <table class="table">
+          <thead>
+            <th>Estacionamiento</th>
+            <th>Vehiculos</th>
+            <th>Ticket</th>
+            <th>Ingreso</th>
+            <th>Salida</th>
+            <th>Duración</th>
+            <th>Monto pago</th>
+          </thead>
+          <tbody class="data"></tbody>
+        </table>
+        <p class="table-error-msg"></p>
+      </section>
+
+    </main>
+    <script src="/admin/Tickets/script.js"></script>
+  </body>
+</html>

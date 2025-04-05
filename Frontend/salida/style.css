@@ -1,0 +1,143 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "IBM Plex Mono", serif;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.banner-img {
+    width: 100%; /* Ajuste responsivo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.primary-conteiner {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px; /* Espaciado adicional */
+}
+
+/* Header */
+.header-web {
+    padding: 10px 20px;
+    border-bottom: 2px solid #fff;
+}
+
+.header-web .ul-father {
+    display: flex;
+    flex-wrap: wrap; /* Permite ajuste automático */
+    justify-content: center;
+    gap: 10px; /* Espaciado entre enlaces */
+}
+
+.header-web .ul-father a {
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+.header-web .ul-father a:hover {
+    color: #ffcc33;
+}
+
+.header-web .ul-father li {
+    list-style: none;
+}
+
+/* Section */
+.section-one {
+    margin-top: 20px;
+    text-align: center; /* Centra texto */
+}
+
+.section-one .section-one-headder {
+    color: #fbfbfb;
+    margin-bottom: 10px;
+}
+
+.section-one p {
+    color: #fbfbfb;
+    text-align: justify; /* Mejora la legibilidad */
+}
+
+/* Formulario de salida */
+.salida-estacionamiento {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta los elementos */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.input-ticket {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fbfbfb;
+    background-color: transparent;
+    border: 2px solid #fbfbfb;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-ticket:focus {
+    border-color: #ffcc33;
+    box-shadow: 0 0 8px #ffcc33;
+}
+
+.ticket-button {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fbfbfb;
+    background-color: transparent;
+    border: 2px solid #fbfbfb;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.ticket-button:hover {
+    color: #171717;
+    background-color: #fbfbfb;
+    border-color: #ffcc33;
+}
+
+.ticket-button:active {
+    transform: scale(0.95);
+    background-color: #ffcc33;
+    border-color: #fbfbfb;
+    color: #171717;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .primary-conteiner {
+        padding: 10px;
+    }
+
+    .salida-estacionamiento {
+        flex-direction: column; /* Alineación vertical en pantallas pequeñas */
+        gap: 10px;
+    }
+
+    .input-ticket,
+    .ticket-button {
+        width: 100%; /* Ancho completo */
+    }
+}

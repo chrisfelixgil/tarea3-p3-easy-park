@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehiculos</title>
+    <link rel="stylesheet" href="/admin/style.css" type="text/css" />
+  </head>
+  <body>
+    <img class="banner-img" src="/img/banner.jpg" alt="banner-country" />
+    <!-- Modifar la imagen-->
+
+    <!-- MENU -->
+    <main class="primary-conteiner">
+      <header class="header-web">
+        <nav>
+          <ul class="ul-father">
+            <a href="/admin/Estacionamientos/estacionamientos.html"><li>Estacionamientos</li></a>
+            <a href="/admin/Tarifas/tarifas.html"><li>Tarifas</li></a>
+            <a href="/admin/Tickets/ticktes.html"><li>Tickets</li></a>
+            <a href="/admin/admin.html"><li>Vehiculos</li></a>
+            <a href="/entrada.html"><li>EasyPark</li></a>
+          </ul>
+        </nav>
+      </header>
+      <br>
+
+      <!--SECTIONS -->
+      <section class="section-one">
+        <h1 class="section-one-headder">VEHICULOS</h1>
+        <br>
+        <!-- TABLE -->
+        <table class="table">
+          <thead>
+            <th>ID</th>
+            <th>Vehiculos</th>
+          </thead>
+          <tbody class="data"></tbody>
+        </table>
+        <p class="table-error-msg"></p>
+      </section>
+      <br />
+
+      <!-- SECCION BUTTONS-->
+      <section class="section-two">
+        <button class="action-buttons" type="button" onclick="newVehiculo()">
+          Nuevo Vehiculo
+        </button>
+        <button class="action-buttons" type="button" onclick="updateVehiculo()">
+          Actualizar Vehiculo
+        </button>
+        <button class="action-buttons" type="button" onclick="deleteVehiculo()">
+          Eliminar Vehiculo
+        </button>
+        <br />
+
+        <!-- NEW FORM -->
+        <div id="contenedor-formulario"></div>
+      </section>
+    </main>
+    <script src="/admin/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estacionamientos</title>
+    <link rel="stylesheet" href="/admin/Estacionamientos/style.css" type="text/css" />
+  </head>
+  <body>
+    <img class="banner-img" src="/img/banner.jpg" alt="banner-country" />
+    <!-- Modifar la imagen-->
+
+    <!-- MENU -->
+    <main class="primary-conteiner">
+      <header class="header-web">
+        <nav>
+          <ul class="ul-father">
+            <a href="/admin/Estacionamientos/estacionamientos.html"
+              ><li>Estacionamientos</li></a
+            >
+            <a href="/admin/Tarifas/tarifas.html"><li>Tarifas</li></a>
+            <a href="/admin/Tickets/ticktes.html"><li>Tickets</li></a>
+            <a href="/admin/admin.html"><li>Vehiculos</li></a>
+            <a href="/entrada.html"><li>EasyPark</li></a>
+          </ul>
+        </nav>
+      </header>
+      <br>
+
+      <!--SECTIONS -->
+      <section class="section-one">
+        <h1 class="section-one-headder">Todos los estacionamientos</h1>
+        <br>
+        <!-- TABLE All ESTACIONAMIENTOS -->
+        <table class="tableAllEstacionamientos">
+          <thead>
+            <th>Estacionamiento</th>
+            <th>Vehiculos</th>
+            <th>Capacidad Total</th>
+            <th>Estacionamientos Ocupados</th>
+          </thead>
+          <tbody class="dataAllEstacionamientos"></tbody>
+        </table>
+        <p class="table-error-msg"></p>
+      </section>
+      <br />
+
+      <!-- SECCION BUTTONS-->
+      <section class="section-two">
+        <button class="action-buttons" type="button" onclick="updateEstacionamientos()">
+          Actualizar Capacidad
+        </button>
+        <br />
+
+        <!-- NEW FORM -->
+        <div id="contenedor-formulario"></div>
+        <br>
+
+      <!-- TABLE All ESTACIONAMIENTOS -->
+      <h1 class="section-one-headder">Estacionamiento ocupados</h1>
+      <br>
+      <table class="tableEstacionamientosOcupados">
+        <thead>
+          <th>Estacionamiento</th>
+          <th>Vehiculos</th>
+          <th>FechaHora Ingreso</th>
+        </thead>
+        <tbody class="dataEstacionamientosOcupados"></tbody>
+      </table>
+      <p class="table-error-msg"></p>
+      <br>
+
+      <!-- BUSCAR ESTACIONAMIENTO -->
+      <h1 class="section-one-headder">Buscar estacionamientos</h1>
+      <br>
+
+      <!-- BARRA DE BUSQUEDA-->
+      <form method="get" class="search-bar">
+        <input
+          name="id"
+          type="number"
+          placeholder="Estacionamiento"
+          class="input-search"
+        />
+        <button type="button" class="search-button" onclick="searchEstacionamiento()">🔍</button>
+      </form>
+      <br>
+
+      <table class="tableDetalleEstacionamientos">
+        <thead>
+          <th>Estacionamiento</th>
+          <th>Vehiculos</th>
+          <th>Ticket</th>
+          <th>fechaHoraIngreso</th>
+          <th>tiempoTranscurrido</th>
+        </thead>
+        <tbody class="dataDetalleEstacionamientos"></tbody>
+      </table>
+    </section>
+    <br />
+
+      
+      </section>
+
+    </main>
+    <script src="/admin/Estacionamientos/script.js"></script>
+  </body>
+</html>
