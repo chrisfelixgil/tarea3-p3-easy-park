@@ -102,6 +102,32 @@ dotnet watch run
 dotnet publish -c Release
 ```
 
+## 📸 Evidencias de Uso
+
+### 🖥️ Interfaz Principal
+![Interfaz Principal](Frontend/img/main-interface.png)
+*Vista principal del sistema de gestión de parqueo*
+
+### 🔐 Panel de Administración
+![Panel de Administración](Frontend/img/admin-panel.png)
+*Dashboard administrativo con estadísticas y controles*
+
+### 📝 Registro de Entradas
+![Registro de Entradas](Frontend/img/entrada.png)
+*Formulario para registrar la entrada de vehículos*
+
+### 💰 Gestión de Tarifas
+![Gestión de Tarifas](Frontend/img/tarifas.png)
+*Configuración de tarifas por tipo de vehículo*
+
+### 📊 Reportes
+![Reportes](Frontend/img/reportes.png)
+*Generación de reportes y estadísticas*
+
+### 🚗 Control de Salidas
+![Control de Salidas](Frontend/img/salida.png)
+*Proceso de registro de salida y facturación*
+
 ## 👥 Contribución
 1. Fork el proyecto
 2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
