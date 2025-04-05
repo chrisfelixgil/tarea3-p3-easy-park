@@ -8,7 +8,7 @@ loginElement.addEventListener("submit", (event) => {
   const usuario = datos.nombreUsuario; 
   const clave = datos.contrasena;
   
-
+// Logica para el login
   fetch(`https://localhost:7065/Usuarios/Login?nombreUsuario=${usuario}&contrasena=${clave}`,
     {
       method: "POST",
